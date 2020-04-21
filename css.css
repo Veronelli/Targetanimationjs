@@ -1,0 +1,140 @@
+body{
+    margin: 0% auto;
+    padding: 0%;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgback{
+    filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.target-card{
+    margin: 13% 40%;
+}
+.target{
+    position: absolute;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    border: 1px solid rgb(70, 70, 69);
+    width: 200px;
+    height: 300px;
+    transition: transform .4s;
+    transform: perspective(650px) rotateX(60deg);
+    overflow: hidden;
+}
+.swipe{
+    transform: translateY(0%) translateX(0%);
+    animation-name: swipe;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.pexels > h4{
+    font-size: 10px;
+    margin: 5%;
+}
+.static{
+    align-items: center;
+}
+.position{
+    color: rgb(70, 69, 69);
+    margin: 0% 0% 0% 5%;
+    font-size: 12px;
+    float: left;
+}
+.next{
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    display: inline;
+    float: right;
+    padding: 1% 4%;
+    background-color: rgb(24, 161, 216);
+    margin: 5%;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 2px;
+    transition: transform 0.4s, box-shadow 0.4s;
+ 
+}
+.target-mouseout{
+    animation-name: mouseout;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.box{
+    margin: 0 auto;
+    margin-top: 5%;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    overflow: hidden;
+    width: 90%;
+    border-radius: 5px;
+    height: 200px;
+}
+.img-header{
+    width: 100%;
+    height: 200px;
+}
+.not{
+    transform: translateY(40%);
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 90%;
+    height: 150px;
+    position: absolute;
+}
+.target:hover{
+    animation: target;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.next:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 2px 2px black;
+}
+@keyframes target{
+    25%{
+        transform: perspective(650px) rotateX(60deg) translateY(-30px) scale(1);
+
+    }
+    100%{
+        transform: perspective(650px) rotateX(0deg) translateY(-30px) scale(1.5);
+    }
+}
+@keyframes mouseout{
+    0%{
+        transform: perspective(650px) rotateX(0deg) translateY(-30px) scale(1.5);
+    }
+    50%{
+        transform: perspective(650px) rotateX(60deg) translateY(-30px) scale(1);
+    }
+    75%{
+        transform: perspective(650px) rotateX(60deg) translateY(0px);
+    }
+}
+@keyframes swipe{
+    25%{
+        transform: translateX(-100%);
+    }
+    25.1%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+@keyframes swipe-back{
+    25%{
+        transform: translateX(-100%);
+    }
+    25.1%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
+}
