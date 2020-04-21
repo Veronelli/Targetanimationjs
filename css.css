@@ -59,7 +59,6 @@ body{
     font-size: 11px;
     border-radius: 2px;
     transition: transform 0.4s, box-shadow 0.4s;
- 
 }
 .target-mouseout{
     animation-name: mouseout;
@@ -97,7 +96,7 @@ footer > a{
     background-color: rgb(44, 44, 44);
     color: rgb(255, 255, 255);
     padding: 10px 20px;
-    top: 70%;
+    top: 80%;
     position: absolute;
 }
 .target:hover{
@@ -158,6 +157,8 @@ footer > a{
         margin: 40% 22%;
     }
     footer{
+        
+        top: 80%;
         width: 60%;
         text-align: center;
     }
@@ -167,7 +168,6 @@ footer > a{
         background-color: rgb(44, 44, 44);
         color: rgb(255, 255, 255);
         padding: 10px 20px;
-        top: 70%;
         position: absolute;
     }
 }
