@@ -12,7 +12,7 @@ body{
     height: 100%;
 }
 .target-card{
-    margin: 13% 35%;
+    margin: 13% 40%;
 }
 .target{
     position: absolute;
@@ -137,5 +137,9 @@ body{
     100%{
         transform: translateX(0%);
     }
-
+}
+@media screen and (min-width: 200px) and (max-width: 375px){
+    .target-card{
+        margin: 40% 22%;
+    }
 }
