@@ -1,4 +1,4 @@
-
+// Author Veronelli
 var target = document.querySelector('.target')
 var key_api = '563492ad6f91700001000001c068a286a5674b65827ce2e66e2fb163'
 var next = document.querySelector('.next')
